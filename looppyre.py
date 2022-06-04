@@ -8,7 +8,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-model_path = os.path.abspath('../APIHOPE/anomaly_detection_.joblib')
+model_path = os.path.abspath('anomaly_detection_.joblib')
 m = load(model_path)
 interval = 5
 
