@@ -49,7 +49,7 @@ def startTimer():
     threading.Timer(interval, startTimer).start()
     myPeriodicFunction()  
 
-    startTimer()
+startTimer()
 
 if __name__ == '__main__':
     app.run()
