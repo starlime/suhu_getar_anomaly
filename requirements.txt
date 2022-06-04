@@ -4,4 +4,4 @@ thread6
 numpy
 pandas
 joblib
-gunicorn-20.1.0
+gunicorn
