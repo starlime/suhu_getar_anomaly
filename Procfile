@@ -1,0 +1,1 @@
+web: gunicorn looppyre:app --log-file -
