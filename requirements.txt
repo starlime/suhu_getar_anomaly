@@ -3,3 +3,4 @@ thread6
 numpy
 pandas
 joblib
+prophet
