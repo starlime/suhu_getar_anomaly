@@ -1,4 +1,3 @@
-from flask import Flask
 import pyrebase
 import threading
 import os
@@ -6,7 +5,6 @@ from joblib import load
 import numpy as np
 import pandas as pd
 
-app = Flask(__name__)
 
 model_path = os.path.abspath('anomaly_detection_.joblib')
 m = load(model_path)
@@ -24,7 +22,7 @@ firebase = pyrebase.initialize_app(config)
 
 db=firebase.database()
 
-@app.route('/')
+
 def myPeriodicFunction():
     path=db.child('path').child('suhu').get()
     pathy=db.child('path').child('waktu').get()
@@ -51,5 +49,3 @@ def startTimer():
 
 startTimer()
 
-if __name__ == '__main__':
-    app.run()

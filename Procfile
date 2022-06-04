@@ -1,1 +1,1 @@
-web: gunicorn looppyre:app --log-file -
+worker: python looppyre.py
