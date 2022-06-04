@@ -3,3 +3,4 @@ Pyrebase4
 thread6
 numpy
 pandas
+joblib
