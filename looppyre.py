@@ -1,4 +1,3 @@
-from ast import Return
 import pyrebase
 import threading
 import os
