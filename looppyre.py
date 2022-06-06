@@ -1,3 +1,4 @@
+from ast import Return
 import pyrebase
 import threading
 import os
@@ -6,7 +7,7 @@ import numpy as np
 import pandas as pd
 
 
-model_path = os.path.abspath('anomaly_detection_.joblib')
+model_path = os.path.abspath('anomaly_detection.joblib')
 m = load(model_path)
 interval = 5
 
